@@ -1,5 +1,5 @@
 var app = angular.module('MySite', ['ngRoute']);
-app.config(function($routeProvider) {
+app.config(function($routeProvider,$locationProvider) {
 	$routeProvider.when('/', {
 		controller: 'HomeController',
 		templateUrl: 'views/home.html'
@@ -10,4 +10,6 @@ app.config(function($routeProvider) {
 		controller: 'ContactController',
 		templateUrl: 'views/contact.html'
 	});
+	//$locationProvider.hashPrefix('');
+	//$locationProvider.html5Mode(true);
 });
