@@ -9,7 +9,5 @@ app.config(function($routeProvider) {
 	}).when('/contact', {
 		controller: 'ContactController',
 		templateUrl: 'views/contact.html'
-	}).otherwise({
-		redirectTo: '/'
 	});
 });
