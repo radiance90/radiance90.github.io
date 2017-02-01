@@ -13,11 +13,7 @@
     <!-- Font Awsome css -->
     <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- custom css-->
-    <link href="css/main.css" rel="stylesheet" />
-    <!-- Include the core AngularJS library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
-    <!-- Include the AngularJS routing library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.min.js"></script>
+    <link href="css/main.css" rel="stylesheet">
     <!-- custom Font -->
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">   
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
@@ -32,7 +28,7 @@
   <body ng-app="MySite">
   
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top navbar-transparent">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -48,7 +44,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#!">Home</a></li>
+            <li class="active"><a href="#!">Home</a></li>
             <li><a href="#!/about">About</a></li>
             <li><a href="#!/contact">Contact</a></li>
           </ul>
@@ -89,13 +85,8 @@
 
 
 
-
-
-
-
-
     <footer>
-      <div class="container text-center">
+      <div class="container-fluid text-center bg-light-gray">
         <div class="row">
           <div class="col-md-4">
           <span class="copyright">Copyright &copy; Radiance90</span>
@@ -122,8 +113,13 @@
       </div>
     </footer>
 
+    <!-- Include the core AngularJS library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <!-- Include the AngularJS routing library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.min.js"></script>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <!-- Bootstrap js -->
     <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
 

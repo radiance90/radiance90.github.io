@@ -10,10 +10,13 @@ body {
 }
 .navbar-custom {
   background-color: #222222;
+  padding: 10px 0;
+  border: none;
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
   color: #fed136;
+  font-size: 1.5em;
   font-family: 'Kaushan Script', cursive;
 }
 .navbar-custom .navbar-brand:hover,
@@ -35,8 +38,8 @@ body {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #e6b800;
-  border-color: #e6b800;
+  background-color: #fec503;
+  border-color: #fec503;
 }
 .navbar-custom .nav li a {
   font-family: "Montserrat", Helvetica, sans-serif;
@@ -51,8 +54,8 @@ body {
   outline: none;
 }
 .navbar-custom .navbar-nav > .active > a {
-  border-radius: 0;
   color: white;
+  border-radius: 3px;
   background-color: #fed136;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
@@ -60,7 +63,31 @@ body {
   color: white;
   background-color: #fec503;
 }
-
+@media (min-width: 768px) {
+  .navbar-transparent {
+    background-color: transparent;
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none;
+  }
+  .navbar-transparent .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-transparent.affix {
+    background-color: #222222;
+    padding: 10px 0;
+  }
+  .navbar-transparent.affix .navbar-brand {
+    font-size: 1.5em;
+  }
+}
 
 
 
@@ -69,5 +96,12 @@ body {
 
 
 #views {
-	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+footer {
+	width: 100%;
+	bottom:0;
+	position:fixed;
+
 }
