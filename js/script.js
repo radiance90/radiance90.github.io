@@ -12,7 +12,7 @@ $(document).ready(function() {
     })
 
     //Smooth scroll
-    $("header a, nav a").on('click', function(event) {
+    $("header a, #mainNav a").on('click', function(event) {
       if (this.hash !== "") {
         event.preventDefault();
         var hash = this.hash;
