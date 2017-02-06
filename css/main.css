@@ -264,8 +264,8 @@ section h3.section-subheading {
   font-weight: 400;
   margin-top: 50px;
   margin-bottom: 75px;
-  margin-left: 130px;
-  margin-right: 130px;
+  /*margin-left: 130px;
+  margin-right: 130px;*/
 }
 @media (min-width: 768px) {
   section {
