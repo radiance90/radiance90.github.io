@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  font-family:  Helvetica, Arial, sans-serif;
+  font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
 }
 .bg-light-gray {
   background-color: #eeeeee;
@@ -88,6 +88,9 @@ h6 {
   border: none;
   border-color: transparent;
 }
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: white;
+}
 .navbar-custom .navbar-brand {
   color: #fed136;
   font-size: 1.5em;
@@ -115,17 +118,26 @@ h6 {
   background-color: #fec503;
   border-color: #fec503;
 }
-.navbar-custom .nav li a {
+.navbar-custom .nav li a,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a,
+.navbar-default .navbar-nav .open .dropdown-menu {
   font-family: "Montserrat", Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
   color: white;
 }
+.navbar-default .navbar-nav .open a.dropdown-toggle{
+	color: #fec503;
+	background-color: #222222;
+}
 .navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus {
+.navbar-custom .nav li a:focus,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
   color: #fed136;
   outline: none;
+  
 }
 .navbar-custom .navbar-nav > .active > a {
   color: white;
@@ -146,6 +158,18 @@ h6 {
     transition: padding 0.3s;
     border: none;
   }
+  .navbar-default .navbar-nav .open a.dropdown-toggle{
+	color: #fec503;
+	background-color: transparent;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a,
+  .navbar-default .navbar-nav .open .dropdown-menu {
+  	background-color: transparent;
+  	
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu {
+  	margin-right: -110px;
+  }
   .navbar-custom .navbar-brand {
     font-size: 2em;
     -webkit-transition: all 0.3s;
@@ -161,9 +185,18 @@ h6 {
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
   }
+  .navbar-default.affix .navbar-nav .open a.dropdown-toggle{
+  	color: #fec503;
+  	/*border-radius: 3px;
+  	background-color: #fed136;*/
+  }
+  .navbar-default.affix .navbar-nav .open .dropdown-menu>li>a,
+  .navbar-default.affix .navbar-nav .open .dropdown-menu {
+  	background-color: #222222;
+  }
 }
 header {
-  background-image: url('../img/header-img.jpg');
+  background-image: url('../img/header-bg.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -416,36 +449,87 @@ section h3.section-subheading {
 #projects .fa-stack-2x {
 	color:#fed136;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#views {
-	margin-bottom: 50px;
+section#contact {
+  background-color: #222222;
+  background-image: url('../img/map-image.png');
+  background-position: center;
+  background-repeat: no-repeat;
 }
+section#contact .section-heading {
+  color: white;
+}
+section#contact .form-group {
+  margin-bottom: 25px;
+}
+section#contact .form-group input,
+section#contact .form-group textarea {
+  padding: 20px;
+}
+section#contact .form-group input.form-control {
+  height: auto;
+}
+section#contact .form-group textarea.form-control {
+  height: 236px;
+}
+section#contact .form-control:focus {
+  border-color: #fed136;
+  box-shadow: none;
+}
+section#contact ::-webkit-input-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+section#contact :-moz-placeholder {
+  /* Firefox 18- */
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+section#contact ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+section#contact :-ms-input-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+section#contact .text-danger {
+  color: #e74c3c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
 	width: 100%;
