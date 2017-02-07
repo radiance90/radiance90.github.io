@@ -150,7 +150,7 @@ h6 {
   background-color: #fec503;
 }
 @media (min-width: 768px) {
-  .navbar-custom {
+  #mainNav.navbar-custom {
     background-color: transparent;
     padding: 25px 0;
     -webkit-transition: padding 0.3s;
@@ -158,19 +158,19 @@ h6 {
     transition: padding 0.3s;
     border: none;
   }
-  .navbar-default .navbar-nav .open a.dropdown-toggle{
+  #mainNav.navbar-default .navbar-nav .open a.dropdown-toggle{
 	color: #fec503;
 	background-color: transparent;
   }
-  .navbar-default .navbar-nav .open .dropdown-menu>li>a,
-  .navbar-default .navbar-nav .open .dropdown-menu {
+  #mainNav.navbar-default .navbar-nav .open .dropdown-menu>li>a,
+  #mainNav.navbar-default .navbar-nav .open .dropdown-menu {
   	background-color: transparent;
   	
   }
-  .navbar-default .navbar-nav .open .dropdown-menu {
+  #mainNav.navbar-default .navbar-nav .open .dropdown-menu {
   	margin-right: -110px;
   }
-  .navbar-custom .navbar-brand {
+  #mainNav.navbar-custom .navbar-brand {
     font-size: 2em;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -178,20 +178,36 @@ h6 {
   }
 }
 @media (min-width: 768px) {
-  .navbar-custom.affix {
+  #mainNav.navbar-custom.affix {
     background-color: #222222;
     padding: 10px 0;
   }
-  .navbar-custom.affix .navbar-brand {
+  #mainNav.navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
   }
-  .navbar-default.affix .navbar-nav .open a.dropdown-toggle{
+  #mainNav.navbar-default.affix .navbar-nav .open a.dropdown-toggle{
   	color: #fec503;
   	/*border-radius: 3px;
   	background-color: #fed136;*/
   }
-  .navbar-default.affix .navbar-nav .open .dropdown-menu>li>a,
-  .navbar-default.affix .navbar-nav .open .dropdown-menu {
+  #mainNav.navbar-default.affix .navbar-nav .open .dropdown-menu>li>a,
+  #mainNav.navbar-default.affix .navbar-nav .open .dropdown-menu {
+  	background-color: #222222;
+  }
+  .navbar-custom {
+    background-color: #222222;
+    padding: 10px 0;
+  }
+  .navbar-custom .navbar-brand {
+    font-size: 1.5em;
+  }
+  .navbar-default .navbar-nav .open a.dropdown-toggle{
+  	color: #fec503;
+  	/*border-radius: 3px;
+  	background-color: #fed136;*/
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a,
+  .navbar-default .navbar-nav .open .dropdown-menu {
   	background-color: #222222;
   }
 }
@@ -504,33 +520,6 @@ section#contact :-ms-input-placeholder {
 section#contact .text-danger {
   color: #e74c3c;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
 	padding: 25px 0;
 	text-align: center;
@@ -562,4 +551,33 @@ ul.social-buttons li a:active {
 .btn.active,
 .btn:active:focus {
   outline: none;
+}
+div.w3-content {
+	max-width: 1400px;
+	margin-top: 100px !important;
+	margin-bottom: 20px;
+	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+.w3-text-custom {
+	color: #fed136;
+}
+.w3-custom {
+	color: white;
+	background-color: #fed136 !important;
+}
+.info {
+	margin-top: 15px;
+}
+#name {
+	color: white;
+	font-weight: normal;
+}
+div.w3-content h1,
+div.w3-content h2,
+div.w3-content h3,
+div.w3-content h4 {
+	font-weight: normal;
+	text-transform: none;
+	font-family: "Montserrat";
 }
